@@ -1,7 +1,6 @@
-pytesseract 
+pytesseract==0.3.8 
 pillow 
 streamlit
-python-decouple
 sqlalchemy
 psycopg2-binary
 pandas
