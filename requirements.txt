@@ -1,0 +1,7 @@
+pytesseract 
+pillow 
+streamlit
+python-decouple
+sqlalchemy
+psycopg2
+pandas
