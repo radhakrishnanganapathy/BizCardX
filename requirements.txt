@@ -3,5 +3,5 @@ pillow
 streamlit
 python-decouple
 sqlalchemy
-psycopg2
+psycopg2-binary
 pandas
