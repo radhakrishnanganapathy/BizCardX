@@ -7,7 +7,9 @@ from models import Card
 from db import get_db, CreateTables
 import db
 import pandas as pd
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR'
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'  # Replace with your Tesseract path
+pytesseract.pytesseract.tessdata_dir_config = '--tessdata-dir "C:\Program Files\Tesseract-OCR\tessdata"'  # Adjust to your setup
+
 image = st.file_uploader("upload your image here", type=["jpg","png","jpeg"])
 CreateTables()
 if image is not None:
