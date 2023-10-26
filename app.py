@@ -27,7 +27,7 @@ if image is not None:
      name = re.search(name_pattern, text).group()
      position = re.search(position_pattern, text).group()
      mobile = re.findall(mobile_pattern, text)
-     website = re.search(website_pattern, text).group()
+     website = re.search(website_pattern, text).group() if re.search(website_pattern, text) else None
      email = re.search(email_pattern, text).group()
      address = re.search(address_pattern, text).group() if re.search(address_pattern, text) else None
 
