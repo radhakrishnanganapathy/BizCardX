@@ -24,9 +24,9 @@ if image is not None:
      address_pattern = r"\d{1,4}\s[A-Za-z0-9\s,]+\d{6}"
 
      # Extract data using regular expressions
-     name = re.search(name_pattern, text).group()
-     position = re.search(position_pattern, text).group()
-     mobile = re.findall(mobile_pattern, text)
+     name = re.search(name_pattern, text).group() if re.search(name_pattern, text) else None
+     position = re.search(position_pattern, text).group() if re.search(position_pattern, text) else None
+     mobile = re.findall(mobile_pattern, text) if re.search(mobile_pattern, text) else None
      website = re.search(website_pattern, text).group() if re.search(website_pattern, text) else None
      email = re.search(email_pattern, text).group() if re.search(email_pattern, text) else None
      address = re.search(address_pattern, text).group() if re.search(address_pattern, text) else None
