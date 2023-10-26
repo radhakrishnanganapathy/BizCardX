@@ -4,4 +4,5 @@ streamlit
 sqlalchemy
 psycopg2-binary
 pandas
+opencv-python
 # tesseract-ocr==4.1.1
