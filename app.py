@@ -18,7 +18,7 @@ if image is not None:
      st.write(text)
      name_pattern = r"^[A-Z][a-z]+"
      position_pattern = r"[A-Z][A-Z\s]+"
-     mobile_pattern = r"\+\d{3}-\d{3}-\d{4}"
+     mobile_pattern = r"(\+?\d{3}-\d{3}-\d{4})"
      website_pattern = r"www\.[A-Za-z0-9]+\.[a-z]+"
      email_pattern = r"\S+@\S+"
      address_pattern = r"\d{1,4}\s[A-Za-z0-9\s,]+\d{6}"
