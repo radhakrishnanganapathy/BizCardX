@@ -10,12 +10,12 @@ from db import get_db
 # secrets_path = os.path.join(os.path.dirname(__file__), ".streamlit/secrets.toml")
 
 class Card(Base):
-     __tablename__ = 'curd1'
+     __tablename__ = 'card'
      id = Column(Integer,primary_key=True)
      name = Column(String(255))
      position = Column(String(255))
-     mobile = Column(ARRAY(String),nullable = False, index = True)
-     email = Column(String(255),nullable = False, index = True)
+     mobile = Column(ARRAY(String))
+     email = Column(String(255))
      website = Column(String(255),nullable = False, index = True)
      address = Column(String(255))
 
