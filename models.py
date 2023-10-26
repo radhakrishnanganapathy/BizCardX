@@ -32,4 +32,24 @@ class Card(Base):
            db.commit()
            db.refresh(db_return)
            return db_return
+     def get_card(db:Session):
+           db_return = db.query(Card).all()
+           return db_return
+
+class CardInfo(Base):
+      __tablename__ = 'cardinfo'
+      id = Column(Integer,primary_key=True)
+      card = Column(Text)
+
+      def full_card (db:Session, card):
+            db_return = CardInfo(
+                  card = card
+            )
+            db.add(db_return)
+            db.commit()
+            db.refresh(db_return)
+            return db_return
+      def full_text(db:Session):
+            db_return = db.query(CardInfo).all()
+            return db_return
     
