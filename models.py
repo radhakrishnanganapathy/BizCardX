@@ -16,7 +16,7 @@ class Card(Base):
      position = Column(String(255))
      mobile = Column(ARRAY(String))
      email = Column(String(255))
-     website = Column(String(255),nullable = False, index = True)
+     website = Column(String(255))
      address = Column(String(255))
 
      def create_card (db:Session,name,position,mobile,email,website,address):
