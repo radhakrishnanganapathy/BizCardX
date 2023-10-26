@@ -10,7 +10,7 @@ from db import get_db
 # secrets_path = os.path.join(os.path.dirname(__file__), ".streamlit/secrets.toml")
 
 class Card(Base):
-     __tablename__ = 'card'
+     __tablename__ = 'card1'
      id = Column(Integer,primary_key=True)
      name = Column(String(255))
      position = Column(String(255))
