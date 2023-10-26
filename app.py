@@ -28,7 +28,7 @@ if image is not None:
      position = re.search(position_pattern, text).group()
      mobile = re.findall(mobile_pattern, text)
      website = re.search(website_pattern, text).group() if re.search(website_pattern, text) else None
-     email = re.search(email_pattern, text).group()
+     email = re.search(email_pattern, text).group() if re.search(email_pattern, text) else None
      address = re.search(address_pattern, text).group() if re.search(address_pattern, text) else None
 
 #      lines = text.split('\n')
