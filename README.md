@@ -3,7 +3,11 @@ Project Title BizCardX: Extracting Business Card Data with OCR
 Technologies  OCR,streamlit GUI, SQL,Data Extraction
 
 # requirements.tx
-pytesseract pillow streamlit
+pytesseract pillow streamlit psycopg2-binary pandas sqlalchemy
+
+
+# pakages.txt
+tesseract-ocr -> this is for tesseract install for live
 
 # Download Tesseract
 https://github.com/tesseract-ocr/tesseract/releases
